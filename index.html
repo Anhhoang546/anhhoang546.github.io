@@ -438,7 +438,27 @@
       </div>
 
     </section><!-- /Resume Section -->
+    <div class="container text-center" style="padding: 60px 0; margin-top: 30px; margin-bottom: 30px; position: relative;">
+      
+      <div style="width: 80%; height: 1px; margin: 0 auto 50px auto; background: linear-gradient(90deg, transparent, rgba(162, 210, 255, 0.4), transparent);"></div>
 
+      <h3 style="font-size: 42px; font-weight: 800; margin-bottom: 5px; letter-spacing: 2px; background: linear-gradient(90deg, #a2d2ff, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase;">
+        A Data-driven mind.
+      </h3>
+      
+      <p style="font-style: italic; font-size: 26px; font-weight: 300; color: #d4b499; margin-bottom: 25px;">
+        A Coffee-driven soul.
+      </p>
+
+      <div style="height: 2px; width: 120px; margin: 0 auto 25px auto; background: linear-gradient(90deg, rgba(162,210,255,0) 0%, rgba(212,180,153,0.8) 50%, rgba(162,210,255,0) 100%); box-shadow: 0px 0px 15px rgba(212,180,153,0.6); border-radius: 50%;"></div>
+
+      <p style="color: #ffffff; font-size: 16px; line-height: 1.6; max-width: 600px; margin: 0 auto; font-weight: 400;">
+        Just like extracting insights from complex data, brewing the perfect cup of coffee requires patience, precision, and a passion for the process.
+      </p>
+
+      <div style="width: 80%; height: 1px; margin: 50px auto 0 auto; background: linear-gradient(90deg, transparent, rgba(212, 180, 153, 0.3), transparent);"></div>
+
+    </div>
 
       <section id="services" class="services section-bg"> <!-- /COFFEE SECTION -->
   <div class="container">
@@ -487,6 +507,53 @@
   </div>
 </section> <!-- /COFFEE SECTION -->
       
+    <section id="coffee-game" class="coffee-game-section"> <!-- GAME-->
+  <div class="container text-center">
+    
+    <div class="section-title">
+      <h2>Let me treat you a coffee! ☕</h2>
+      <p>Thank you for visiting. Before you go, pick a flavor to discover which Vietnamese Coffee represents our connection.</p>
+    </div>
+
+    <div id="game-container" class="game-box">
+      
+      <div id="step-1" class="game-step active">
+        <h3>How do you prefer your coffee today?</h3>
+        <div class="btn-group-custom">
+          <button onclick="nextStep('strong')" class="coffee-btn">Bold & Strong (Đậm đà)</button>
+          <button onclick="nextStep('sweet')" class="coffee-btn">Sweet & Creamy (Ngọt ngào)</button>
+        </div>
+      </div>
+
+      <div id="step-2-strong" class="game-step" style="display: none;">
+        <h3>Ice or Hot?</h3>
+        <div class="btn-group-custom">
+          <button onclick="showResult('den-da')" class="coffee-btn">Iced (Đá lạnh)</button>
+          <button onclick="showResult('egg-coffee')" class="coffee-btn">Hot & Unique (Nóng & Lạ)</button>
+        </div>
+      </div>
+
+      <div id="step-2-sweet" class="game-step" style="display: none;">
+        <h3>Traditional or Light?</h3>
+        <div class="btn-group-custom">
+          <button onclick="showResult('sua-da')" class="coffee-btn">Traditional (Truyền thống)</button>
+          <button onclick="showResult('bac-xiu')" class="coffee-btn">Light & Gentle (Nhẹ nhàng)</button>
+        </div>
+      </div>
+
+      <div id="game-result" class="game-result" style="display: none;">
+        <div class="result-content">
+          <img id="result-img" src="" alt="Coffee Result" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #cda45e;">
+          <h3 id="result-name" style="color: #cda45e;">Coffee Name</h3>
+          <p id="result-desc" style="color: #fff;">Description</p>
+          <button onclick="resetGame()" class="btn-reset">Choose Again ↻</button>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+</section> <!-- GAME-->
+
 
     </section><!-- /Services Section -->
 
@@ -581,53 +648,6 @@
       </div>
 
     </section><!-- /Contact Section -->
-    <section id="coffee-game" class="coffee-game-section"> <!-- GAME-->
-  <div class="container text-center">
-    
-    <div class="section-title">
-      <h2>Let me treat you a coffee! ☕</h2>
-      <p>Thank you for visiting. Before you go, pick a flavor to discover which Vietnamese Coffee represents our connection.</p>
-    </div>
-
-    <div id="game-container" class="game-box">
-      
-      <div id="step-1" class="game-step active">
-        <h3>How do you prefer your coffee today?</h3>
-        <div class="btn-group-custom">
-          <button onclick="nextStep('strong')" class="coffee-btn">Bold & Strong (Đậm đà)</button>
-          <button onclick="nextStep('sweet')" class="coffee-btn">Sweet & Creamy (Ngọt ngào)</button>
-        </div>
-      </div>
-
-      <div id="step-2-strong" class="game-step" style="display: none;">
-        <h3>Ice or Hot?</h3>
-        <div class="btn-group-custom">
-          <button onclick="showResult('den-da')" class="coffee-btn">Iced (Đá lạnh)</button>
-          <button onclick="showResult('egg-coffee')" class="coffee-btn">Hot & Unique (Nóng & Lạ)</button>
-        </div>
-      </div>
-
-      <div id="step-2-sweet" class="game-step" style="display: none;">
-        <h3>Traditional or Light?</h3>
-        <div class="btn-group-custom">
-          <button onclick="showResult('sua-da')" class="coffee-btn">Traditional (Truyền thống)</button>
-          <button onclick="showResult('bac-xiu')" class="coffee-btn">Light & Gentle (Nhẹ nhàng)</button>
-        </div>
-      </div>
-
-      <div id="game-result" class="game-result" style="display: none;">
-        <div class="result-content">
-          <img id="result-img" src="" alt="Coffee Result" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #cda45e;">
-          <h3 id="result-name" style="color: #cda45e;">Coffee Name</h3>
-          <p id="result-desc" style="color: #fff;">Description</p>
-          <button onclick="resetGame()" class="btn-reset">Choose Again ↻</button>
-        </div>
-      </div>
-
-    </div>
-  </div> 
-</section> <!-- GAME-->
-
 
 
   </main>
